@@ -1,0 +1,137 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Calcular_Soma___Subtração___Mult_e_Divisão
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            float S, VL1, VL2;
+            VL1 = float.Parse(textBox1.Text);
+            VL2 = float.Parse(textBox2.Text);
+            S = VL1 + VL2;
+            label7.Text = S.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            float DI, VL1, VL2;
+            VL1 = float.Parse(textBox1.Text);
+            VL2 = float.Parse(textBox2.Text);
+            DI = VL1 / VL2;
+            label9.Text = DI.ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            float SU, VL1, VL2;
+            VL1 = float.Parse(textBox1.Text);
+            VL2 = float.Parse(textBox2.Text);
+            SU = VL1 - VL2;
+            label8.Text = SU.ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            float MU, VL1, VL2;
+            VL1 = float.Parse(textBox1.Text);
+            VL2 = float.Parse(textBox2.Text);
+            MU = VL1 * VL2;
+            label10.Text = MU.ToString();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            label7.Text = " ";
+            label8.Text = " ";
+            label9.Text = " ";
+            label10.Text = " ";
+            textBox1.Focus();
+        }
+    }
+}
